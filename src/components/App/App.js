@@ -4,6 +4,7 @@ import List from '../List/ListContainer.js';
 import Hamburger from '../Hamburger/Hamburger.js';
 import PropTypes from 'prop-types';
 import Search from '../Search/SearchContainer';
+import {DragDropContext} from 'react-beautiful-dnd';
 
 
 class App extends React.Component {
@@ -16,6 +17,11 @@ class App extends React.Component {
 
   render() {
     const {title, subtitle, lists} = this.props;
+    
+    const moveCardHandler = result => {
+      console.log(result);
+    };
+
     return (
       <main className={styles.component}>
         <Hamburger>
@@ -24,9 +30,11 @@ class App extends React.Component {
           <div className={styles.search}>
             <Search></Search>
           </div>
-          {lists.map(listData => (
-            <List key={listData.id} {...listData} />
-          ))}
+          <DragDropContext onDragEnd={moveCardHandler}>
+            {lists.map(listData => (
+              <List key={listData.id} {...listData} />
+            ))}
+          </DragDropContext>
           
         </Hamburger>
       </main>
