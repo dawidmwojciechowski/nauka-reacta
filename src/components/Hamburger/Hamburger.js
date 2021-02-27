@@ -1,11 +1,10 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Hamburger.scss';
 
 class Hamburger extends React.Component {
 
-    propTypes = {
+    static propTypes = {
       children: PropTypes.node,
     }
 
@@ -20,7 +19,7 @@ class Hamburger extends React.Component {
     render() {
       return (
         <div>
-          <a onClick={this.handleClick} className={styles.icon + 'fas fa-bars'}></a>
+          <a onClick={this.handleClick} className={'fas fa-bars'}></a>
           <div className={styles.content + ((this.state.contentActive) ? ' ' + styles.contentActive : '')}>
             {this.props.children}
           </div>
