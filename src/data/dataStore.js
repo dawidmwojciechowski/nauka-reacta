@@ -1,6 +1,8 @@
 export const settings = {
   columnCreatorText: 'Add new column',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   cardCreatorText: 'Add new card',
+  icon: 'dog',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -12,6 +14,18 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+};
+
+export const faqContent = {
+  title: 'Faq',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  text:'Why you want to work as programist? - I want to change my life completly. Do something that is ongoing and constantly require me to focus and learn new things because i had enough of boring jobs',
+};
+
+export const infoContent = {
+  title: 'Info',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  text:'App created in react and redux showing basic knowlage of creator in this subject. The side bar menu has been 100% made by me as extra exercise. It shows that im able to send and recive data throught redux. I was also able to implement plugin react-beautiful-dnd with you can check by playng with cards',
 };
 
 export const pageContents = {
