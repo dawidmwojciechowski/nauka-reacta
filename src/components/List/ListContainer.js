@@ -3,11 +3,11 @@ import List from './List';
 import {getColumnsForList, createActionAddColumn} from '../../redux/columnsRedux.js';
 
 
-function mapStateToProps(state, props) {
-  return ({
+const mapStateToProps = (state, props) => {
+  return {
     columns: getColumnsForList(state, props.id),
-  });
-}
+  };
+};
 
 const mapDispatchToProps = (dispatch, props) => ({
   addColumn: title => dispatch(createActionAddColumn({
