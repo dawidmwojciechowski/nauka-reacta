@@ -93,6 +93,20 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+
+  {
+    id: 'list-2',
+    title: 'Wonderful bicycles <sup>ride!</sup>',
+    description: 'Magic two wheels!',
+    image: 'https://i.postimg.cc/k6Nmd6Tp/bicycle.jpg',
+  },
+
+  {
+    id: 'list-3',
+    title: 'V8 powerful engine <sup>strokes!</sup>',
+    description: 'Gasoline and oxygen mixture with spark touch!',
+    image: 'https://i.postimg.cc/bSzjYyMN/v8.jpg',
+  },
 ];
 
 const columns = [
