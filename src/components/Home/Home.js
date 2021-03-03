@@ -13,6 +13,7 @@ class Home extends React.Component {
     subtitle: PropTypes.node,
     lists: PropTypes.array,
     moveCard: PropTypes.func,
+    sortColumn: PropTypes.func,
   }
 
   render() {
