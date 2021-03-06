@@ -18,6 +18,7 @@ class Card extends React.Component {
 
   
   render() {
+
     const {title, id, index, draggable} = this.props;
 
     if (draggable){
