@@ -11,6 +11,7 @@ class SearchResults extends React.Component {
     title: PropTypes.string,
     icon: PropTypes.node,
     cards: PropTypes.array,
+    draggable: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -29,12 +30,11 @@ class SearchResults extends React.Component {
             </span>
           </h3>
           <div className={styles.cards}>
-            {cards.map(cardData => (
-              <Card key={cardData.id} {...cardData} />
-            ))}
+            {cards.map(cardData => (<Card key={cardData.id} {...cardData} />))}
           </div>
         </Container>
       </section>
+      
     );
   }
 }
