@@ -30,7 +30,7 @@ class SearchResults extends React.Component {
             </span>
           </h3>
           <div className={styles.cards}>
-            {cards.map(cardData => (<Card key={cardData.id} {...cardData} />))}
+            {cards.map(cardData => (<Card key={cardData.id} draggable={false} {...cardData} />))}
           </div>
         </Container>
       </section>

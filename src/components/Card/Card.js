@@ -38,9 +38,11 @@ class Card extends React.Component {
       );
     }
     else {
-      <div className={styles.component}>
-        {title}
-      </div>;
+      return (
+        <div className={styles.component}>
+          {title}
+        </div>
+      );
     }
   }
 }
